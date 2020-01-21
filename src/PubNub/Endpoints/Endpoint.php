@@ -348,7 +348,7 @@ abstract class Endpoint
 
             return new PNEnvelope($e->getData(), $this->createStatus(
                 $statusCategory,
-                null,
+                $data,
                 null,
                 (new PubNubConnectionException())->setOriginalException($e)
             ));
